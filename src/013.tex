@@ -1,0 +1,37 @@
+(59)
+
+\Op Пусть $X$~--- векторное пространство над $\R$ или $\C$. Функция $\varphi: X \times X \to \R$ (или $\C$) называется скалярным произведением в $X$ (обозначаение $\varphi{x, y} = \langle a, b \rangle$), если она  удовлетворяет следующим свойствам.\\
+1. Линейность по первому аргументу: для всех $x_1, x_2, y \in X$ и всех $\lambda, \mu \in \R(\C)$\\
+$\langle\lambda x_1 + \mu x_2, y\rangle = \lambda \cdot\langle x_1, y\rangle + \mu\cdot\langle x_2, y\rangle$.\\
+2. Эрмитовская симметричность\\
+$\langle y, x\rangle = \ol{\langle x, y\rangle}$\\
+3. Положительная определённость:\\
+$\langle x, x\rangle \ge 0;\quad \langle a, b\rangle = 0 \lra x = \theta$\\
+В вешественном случае черту можно опустить.\\
+Некоторые свойства скалярного произведения:\\
+1. $\langle x, y_1, + y_2\rangle = \langle x, y_1\rangle + \langle x, y_2\rangle$.\\
+2. $\langle x, \lambda y\rangle = \ol{\lambda}\langle x, y\rangle$.\\
+3. $\langle \theta, y\rangle = \langle x, \theta\rangle = 0$
+
+\T \q Неравенство Коши-Буняковского-Шварца.\input{src/113.tex}
+
+\D Если $y = \theta$ неравенство выполнено. Иначе положим\\
+$\lambda = -\frac{\langle x, y\rangle}{\langle y, y\rangle}$\\
+Тогда в силу аксиом скаялярного произведения и равенства $\lambda\ol{\lambda} = |\lambda|^2$\\
+$\langle x + \lambda y, x + \lambda y\rangle = \langle x, x\rangle + \ol{\lambda}\langle x, y\rangle + \lambda\langle y, x\rangle + |\lambda|^2 \langle y, y\rangle = \langle x, x\rangle + (-1 -1 + 1)\frac{|\langle x, y\rangle|^2}{\langle y, y\rangle}$\\
+Таким образом\\
+$\langle x, x\rangle\langle y, y\rangle - |\langle x, y\rangle|^2 = \langle y, y\rangle\langle x + \lambda y, x + \lambda y\rangle \ge $
+
+\Zam1. Неравенство обращается в равенство тогда и толко тогда, когда вектора коллинеарны.
+
+Вункция $p(x) = \sqrt{\ang xx}$~--- норма в $X$.\\
+Положительная определённость следёет из аксиом.\\
+$p(\lambda x) = \sqrt{\ang{\lambda x}{\lambda x}} = \sqrt{\lambda\ol{\lambda}\ang xx}= |\lambda| p(x)$\\
+Докажем неравество треугольника\\
+$p^2(x + y) = \ang{x + y}{x + y} = \ang xx + \ang xy + \ang yx + \ang yy = \ang xx + 2\Re\ang xy + \ang yy \le \ang xx + 2|\ang xy| + \ang yy \le p^2(x) + 2p(x)p(y) + p^2(y) = (p(x) + p(y))^2$\\
+
+\Zam2. Неравенство обращается в равенство тогда и толко тогда, когда вектора $x, y$сонаправлены.
+
+\D Еслм один из векторов нулевой, равенство очевидно. Пусть $x, y \neq \theta$.Обращение неравенства в равенство равносильно тому, что\\
+$\Re\ang xy = |\ang xy| = ||x||\cdot||y||$\\
+Из второго равенства вектора коллинеарны, то есть $x = \lambda y$. Подставляя, получим $\Re\lambda \ang yy = = |\lambda|\ang yy$. Отсюда $\lambda > 0$

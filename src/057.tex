@@ -1,0 +1,47 @@
+(185)
+
+\q1. $c' = 0$.
+
+\q2. $(x^\alpha)' = \alpha x^{\alpha - 1}, \alpha \in \R$.
+
+\D Пусть $x \neq 0$ считая, что $0 < |h| < |x|$. Пользуясь замечательным пределом для степенной функции получаем \F{$\frac{(x + h)^\alpha = x^\alpha}h = \frac{(1 + h/x)^\alpha - 1}{h/x}x^{\alpha - 1} \xra[h \to 0]{} \alpha x^{\alpha - 1}$.}
+
+\q3. $(a^x)' = a^x \ln a,\quad a > 0,\s a \neq 1$.
+
+\D По замечательному пределу для показательной функции \F{$\frac{a^{x + h} - a^x}h = a^x\frac{a^h - 1}h \xra[h \to 0]{} a^x \ln a$.}
+
+\q4. $(\log_a x)' = \frac 1{x\ln a},\quad x > 0,\s a > 0,\ a \neq 1$.
+
+\D По замечательному пределу для логарифма. \F{$\frac{\log_a(x + h) - \log_a x}h = \frac 1x \frac{\log_a(1 + h/x)}{h/x}\xra[h\to 0]{}\frac 1{x\ln a}$.}
+
+\q5. $(\sin x)' = \cos x$.
+
+\D По замечательному пределу для синуса и непрерывности косинуса \F{$\frac{\sin(x + h) - \sin x}h = \frac{\sin\frac h2 \cos(h + \frac h2)}h \xra[h\to 0]{} \cos x$.}
+
+\q6. $(\cos x)' = -\sin x$.
+
+\D По формуле для дифференцирования произведения и правиду дифференцирования композиции \F{$(\cos x)' = \sin (\frac \pi2 - x)' = \cos(\frac \pi2 - x)(-1) = -\sin x$.}
+
+\q7. $(\tg x)' = \frac 1{\cos^2}$.
+
+\D По формулам для производных синуса и коминуса и правилу дифференцирования частного \F{$(\tg x)' = (\frac{\sin x}{\cos x})' = \frac{(\sin x)'\cos x - (\cos x)'\sin x}{\cos^ x} = \frac{\cos^2 + \sin^2}{\cos^2 x} = \frac{1}{\cos^2 x}$.}
+
+\q8. $(\ctg x)' = -\frac 1{\sin^2 x}$.
+
+\D По формуле для производной тангенса и правилам дифференцирования композиции \F{$(\ctg x)' = \tg(\frac\pi2 - x)' = -\frac 1{\cos^2(\frac \pi2 - x)} = -\frac 1{\sin^2 x}$.}
+
+\q9. $(\arcsin x)' = \frac 1{\sqrt{1 - x^2}},\quad x \in (-1, 1)$.
+
+\D По правилу дифференцирования обратной функции \F{$(\arcsin x)' = \frac 1{(\sin y)'} = \frac 1{\cos y} = \frac 1{\sqrt{1 - \sin^2 y}} = \frac 1{\sqrt{1 - x^2}}$.}
+
+\q10. $(\arccos x)' = -\frac 1{\sqrt{1 - x^2}},\quad x \in (-1, 1)$.
+
+\D Так как $\arccos x = \frac \pi2 -\arcsin x$, \F{$(\arccos x)' = -(\arcsin x)' = -\frac 1{1 - x^2}$.}
+
+\q11. $(\arctg x)' = \frac 1{1 + x^2}$.
+
+\D По правилу дифференцирования обратной функции \F{$(\arctg x)' = \frac 1{(\tg y)'}= \cos^2 y = \frac 1{1 + \tg^2 y} = \frac 1{1 + x^2}$.}
+
+\q12. $(\arcctg x)' = -\frac 1{1 + x^2}$.
+
+\D Так как $\arcctg x = \frac\pi2 - \arctg x$ \F{$(\arcctg x)' = -(\arctg x)' = -\frac 1{1 + x^2}$.}

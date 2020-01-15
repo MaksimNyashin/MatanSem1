@@ -1,0 +1,10 @@
+(21-24)\\
+Пусть $\{P_n\}^\infty_{n = 1}$~--- последовательность утверждений. Если\\
+1) $P_1$ верно,
+2) для любого $n \in \N$ из $P_n$ следует $P_{n + 1}$\\
+то $P_n$ верно для всех $n \in \N$.
+
+\q Бином Ньютона. Если $n \in \Z_+$, $x, y \in \R$ или $\C$, то\\
+$(x + y)^n = \ds\sum\limits^n_{k = 0} C^k_n x^k y^{n-k}$.\\
+При $n=0$ и $n=1$ очевидно. $n=1$ служит базой индукции.\\
+$(x + y)^{n + 1} = (x + y)(x + y)^n = (x + y)\ds\sum\limits^n_{k = 0} C^k_n x^k y^{n-k} = \sum\limits^n_{k = 0} C^k_n x^{k + 1} y^{n-k} + \sum\limits^n_{k = 0} C^k_n x^k y^{n - k + 1} = \sum\limits^{n + 1}_{k = 1} C^{k - 1}_n x^k y^{n + 1 -k} + \sum\limits^n_{k = 0} C^k_n x^k y^{n + 1-k} = C^n_n x^{n + 1}y^0 + \sum\limits^n_{k = 1} (C^{k - 1}_{n} + C^k_n) x^k y^{n + 1-k} + C^0_nx^0y^{n + 1} = C^{n + 1}_{n + 1}x^{n + 1}y^0 + \sum\limits^{n}_{k = 1} C^k_{n + 1} x^k y^{n + 1-k} + C^0_{n + 1}x^0y^{n + 1} = \sum\limits^{n + 1}_{k = 0} C^k_{n + 1} x^k y^{n + 1 - k}$.

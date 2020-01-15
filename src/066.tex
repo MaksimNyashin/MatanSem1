@@ -1,0 +1,10 @@
+(208)
+
+\T \q Формула Тейлора -- Лагранжа. Пусть $n \in \Z_+,\s f \in \pb Cn \ang(ab),\s f$ дифференцируема $n + 1$ раз на $(a, b),\s x_0, x \in \ang ab,\s x \neq x_0$. Тогда существует такая точка $c$, лежащая между $x$ и $x_0$, что \F{$f(X) \dsl\sum{k = 1}n \frac{\pb fk (x_0)}{k!} (x - x_0)^k + \frac{\pb f{n + 1}(c)}{(n + 1)!}(x - x_0)^{n + 1}$.}
+
+\D Обозначим через $\Delta$ интервал с конуами $x, x_0$, тогда $\ol{}\Delta$ обозначает отрезок с этими же концами. Положим $\psi(t) = (x - t)^{n + 1}$, \F{$\varphi(t) = f(x) - f(t) - \dsl\sum{k = 1}n \frac{\pb fk (t)}{k!}(x - t)^k, \quad t \in \ol{\Delta}$} Функции $\varphi$ и $\psi$ непрерывны на $\ol{\Delta}$ и дифференцируемы на $\Delta$, причем \F{$\psi'(t) = -(n + 1)(x - 1)^n \neq 0$} для любого $t \in \Delta$ найдем производную $\varphi$:
+\F{$\varphi'(t) = -f'(t) - \dsl\sum{k = 1}n(\frac{\pb f{k + 1}(t)}{k!}(x-t)^k - \frac{\pb fk(t)}{k!}k(x - t)^{k - 1})=$}
+\F{$= -f'(t) - \dsl\sum{k = 1}n\frac{\pb f{k + 1}(t)}{k!}(x - t)^k + \dsl\sum{k = 1}n \frac{\pb fk(t)}{(k - 1)!}(x - t)^{k - 1}=$}
+\F{$-\dsl\sum{k = 0}n \frac{\pb f{k + 1}(t)}{k!}(x - t)^k + \dsl\sum{j = 0}{n - 1} \frac{\pb f{j + 1}(t)}{j!}(x - t)^j = -\frac{\pb f{n + 1}(t)}{n!}(x - t)^n$} Кроме того, $\varphi(x) = 0,\s \varphi(x_0) = R_{n, x_0}f(x),\s \psi(x) = 0,\s \psi(x_0) = (x - x_0)^{n + 1}$.\\
+По теореме Коши о среднем, найдется такая точка $c \in \Delta$, что \F{$\frac{\varphi(x) -\varphi(x_0)}{\psi(x) - \psi(x_0)} = \frac{\varphi'(c)}{\psi'(c)}$.} Подставляя значения функций и производных, получаем
+\F{$\frac{0 - R_{n, x_0}f(x)}{0 - (x - x_0)^{n + 1}} = \frac{-\pb f{n + 1}(x)(x - c)^n}{n!(n + 1)(x - c)^n}$,} что равносильно \F{$R_{n, x_0}f(x) = \frac{\pb f{n + 1}(c)}{(n + 1)!}(x - x_0)^{n + 1}$.}
