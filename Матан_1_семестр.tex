@@ -1,0 +1,99 @@
+%C:\Users\Maxim\AppData\Local\MiKTeX\2.9\TeXworks\0.6\templates
+\documentclass{article}
+%\documentclass[10pt,a5paper]{article}
+\usepackage[17pt]{extsizes}
+\usepackage[left=2cm, right=2cm, top=2cm, bottom=2cm, bindingoffset=0cm]{geometry}
+\usepackage{mathtext}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{amsfonts}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage{mathtools} %/xra
+\usepackage{amssymb} %/varnothing
+\usepackage{graphicx}
+\usepackage{hyperref}
+\graphicspath{{./images/}}
+\newcommand{\RNumb}[1]{\uppercase\expandafter{\romannumeral #1\relax}}
+\newcommand{\ang}[2]{\langle #1, #2 \rangle}
+\newcommand{\dsl}[3]{\displaystyle #1\limits^{#3}_{#2}}%{command}{from}{to}
+\newcommand{\iseq}[3]{\{#1_{#2}\}_{#2 \in #3}}%{set}{var}{var set}
+\newcommand{\seq}[4]{\{#1_{#2}\}^{#4}_{#2 = #3}}%{set}{var}{from}{to}
+\newcommand{\se}[3]{\{#1\}^{#3}_{#2}}%{element}{from}{to}
+\newcommand{\pb}[2]{#1^{(#2)}}%power in brackets
+\newcommand{\ool}[1]{\ol{\ol{#1}}}
+\newcommand{\li}[2]{\dsl\lim{#1 \to #2}{}}
+\newcommand{\lr}[1]{\left#1\right}
+
+\newcommand{\F}[1]{
+\begin{center}
+#1\\
+\end{center}
+}
+\lstset { %
+    language=C++,
+    backgroundcolor=\color{black!5}, % set backgroundcolor
+    basicstyle=\footnotesize,% basic font setting
+}
+\newcommand{\FF}[1]{\F{$\ds #1$}}
+
+
+\begin{document}
+\def\q#1.{{\bf #1.}}
+\def\lra{\Leftrightarrow}
+\def\B{\mathbb{B}}
+\def\N{\mathbb{N}}
+\def\Z{\mathbb{Z}}
+\def\Q{\mathbb{Q}}
+\def\R{\mathbb{R}}
+\def\I{\mathbb{I}}
+\def\C{\mathbb{C}}
+\def\O{\mathcal{O}}
+\def\Ra{\Rightarrow}
+\def\skip{\bigskip\bigskip\bigskip\bigskip\bigskip}
+\def\s{\ \ }
+\def\dd{\mathrm{d}}
+\def\ds{\displaystyle}
+\def\xra{\xrightarrow}
+\def\bsl{\textbackslash}
+\def\ol{\overline}
+\def\ul{\underline}
+\def\T{\q Теорема. }
+\def\L{\q Лемма. }
+%\def\T#1.{\q Теорема. \q#1.}
+\def\D{\q Доказательство. }
+\def\S#1.{\q Следствие #1. }
+\def\Zam#1.{\q Замечание #1. }
+\def\Op{\qОпределение. }
+\def\eps{\varepsilon}
+\def\Sv#1.{\q Свойства #1. }
+\def\Pr#1.{\q Пример #1. }
+\def\t{\xra[x\to a]{}}
+\def\Geine{Возьмём последовательность $\{x_n\}$ со свойствами $x_n \in D,\s x_n \neq a,\s x_n\to a$}
+\def\ig{\includegraphics}
+\def\sig{\textit{ sign}}
+
+\input{mainPart.tex}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
